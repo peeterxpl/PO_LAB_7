@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karta_pacjenta.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="177.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dane pacjenta" textAlignment="CENTER" wrappingWidth="246.720703125">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="pole_imie" layoutX="224.0" layoutY="102.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="200.0" />
+            <TextArea fx:id="pole_nazwisko" layoutX="224.0" layoutY="144.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="200.0" />
+            <TextArea fx:id="pole_wiek" layoutX="224.0" layoutY="186.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="200.0" />
+            <Text layoutX="177.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imię: " textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="142.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko: " textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="171.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wiek: " textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="dodaj_do" layoutX="224.0" layoutY="227.0" mnemonicParsing="false" onAction="#dodaj_pacjenta" text="Dodaj do kolekcji" />
+            <Button fx:id="drukuj" layoutX="346.0" layoutY="227.0" mnemonicParsing="false" onAction="#drukuj_pacjentow" prefHeight="25.0" prefWidth="78.0" text="Wydrukuj" />
+            <Text layoutX="224.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sortuj na podstawie:" wrappingWidth="200.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="sortowanie" layoutX="224.0" layoutY="292.0" prefHeight="25.0" prefWidth="200.0" />
+         </children></Pane>
+   </children>
+</GridPane>
